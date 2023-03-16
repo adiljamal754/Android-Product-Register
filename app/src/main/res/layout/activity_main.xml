@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="addProduct"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="#3A3737"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="50dp"
+            android:contentDescription="logo"
+            android:textAlignment="center"
+            app:srcCompat="@drawable/shop" />
+
+        <EditText
+            android:id="@+id/nameTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/nome_do_producto"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColorHint="@color/white" />
+
+        <EditText
+            android:id="@+id/priceTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/indique_o_pre_o"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:textColorHint="@color/white"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/quantityTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/indique_a_quantidade"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:textColorHint="@color/white"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/dateTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/indique_a_data_de_validade"
+            android:inputType="date"
+            android:minHeight="48dp"
+            android:textColorHint="@color/white"
+            android:autofillHints="" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#9d1313"
+            android:backgroundTint="#9d1313"
+            android:onClick="addProduct"
+            android:text="Add"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btnShow"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#9d1313"
+            android:backgroundTint="#9d1313"
+            android:onClick="showProducts"
+            android:text="@string/show_products" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ProductRegister</string>
+    <string name="nome_do_producto">Nome do Producto</string>
+    <string name="indique_o_pre_o">Indique o preço</string>
+    <string name="indique_a_quantidade">Indique a quantidade</string>
+    <string name="todo">TODO</string>
+    <string name="indique_a_data_de_validade">Indique a data de validade</string>
+    <string name="show_products">Show Products</string>
+</resources>
