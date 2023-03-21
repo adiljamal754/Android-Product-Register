@@ -25,11 +25,11 @@
 
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/logoIV"
             android:layout_width="300dp"
             android:layout_height="200dp"
-            android:layout_marginLeft="50dp"
-            android:contentDescription="logo"
+            android:layout_marginStart="50dp"
+            android:contentDescription="@string/logo"
             android:textAlignment="center"
             app:srcCompat="@drawable/shop" />
 
